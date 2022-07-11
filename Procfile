@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Datavizu.py
+web: sh setup.sh && streamlit run Machine_Learning.py
