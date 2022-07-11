@@ -6,7 +6,7 @@ LOGGER = get_logger(__name__)
 
 def run():
     st.set_page_config(
-        page_title="DATAVIZU",
+        page_title="ML256",
         # page_icon="👋",
     )
 
