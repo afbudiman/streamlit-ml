@@ -5,6 +5,9 @@ from xgboost import XGBClassifier
 
 st.set_page_config(layout="wide")
 
+with open('style.css') as f:
+  st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 df = pd.read_csv('Data/telco_customer_churn.csv')
 df = df.dropna()
 df['SeniorCitizen'] = df['SeniorCitizen'].replace({0:'No',1:'Yes'})
